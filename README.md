@@ -58,19 +58,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
-  -Links op de artikelenpagina komen dubbel voor met precies dezelfde benaming; 1 voor de afbeelding en 1 voor de set naam.
-  -Alle buttons hebben link tags.
-  -Als alleen het toetsenbord wordt gebruikt om te navigeren, kan alleen de zoekbalk worden geselecteerd.
-  -De website is goed responsive voor mobiel en andere apparaten.
-  -Homepagina heeft geen h1.
-  -Headings van sets komen soms dubbel voor.
-  -Geen van de afbeeldingen hebben alt tekst.
-  -Video's moeten aangeklikt worden om afgespeeld te worden en kunnen gepauzeerd worden, maar er zijn geen captions of transcripts beschikbaar.
-  -Het is niet bij elke link duidelijk of deze inspringt binnen de pagina, een pop-up opent of naar een nieuwe pagina gaat.
-  -Heeft geen high-contrast of light/dark mode.
-  -Tekst wordt niet vergroot.
-  -Website heeft geen grote animaties.
-  -Het kleurencontrast is voldoende en maakt de tekst goed leesbaar.
+  -Links op de artikelenpagina komen dubbel voor met precies dezelfde benaming; 1 voor de afbeelding en 1 voor de set naam.<br>
+  -Alle buttons hebben link tags.<br>
+  -Als alleen het toetsenbord wordt gebruikt om te navigeren, kan alleen de zoekbalk worden geselecteerd.<br>
+  -De website is goed responsive voor mobiel en andere apparaten.<br>
+  -Homepagina heeft geen h1.<br>
+  -Headings van sets komen soms dubbel voor.<br>
+  -Geen van de afbeeldingen hebben alt tekst.<br>
+  -Video's moeten aangeklikt worden om afgespeeld te worden en kunnen gepauzeerd worden, maar er zijn geen captions of transcripts beschikbaar.<br>
+  -Het is niet bij elke link duidelijk of deze inspringt binnen de pagina, een pop-up opent of naar een nieuwe pagina gaat.<br>
+  -Heeft geen high-contrast of light/dark mode.<br>
+  -Tekst wordt niet vergroot.<br>
+  -Website heeft geen grote animaties.<br>
+  -Het kleurencontrast is voldoende en maakt de tekst goed leesbaar.<br>
   
 
 </details>
