@@ -53,13 +53,15 @@
     --background-color-carousel: #e0c570;
     --darkmode-accent: #1f1f1f;
   }
-  
+
+/* https://www.w3schools.com/css/css3_animations.asp */
   @keyframes heartAnimation {
       25%  {transform: rotate(45deg);}
       75%  {transform: rotate(-45deg);}
       100% {transform: rotate(0deg);}
   }
-  
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion */
   @media (prefers-reduced-motion: reduce) {
       html {
           transition: none !important;
@@ -68,7 +70,8 @@
           scroll-snap-type: none !important;
       }
   }
-  
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-color-scheme */
   @media (prefers-color-scheme: dark) {
   
     nav article{
