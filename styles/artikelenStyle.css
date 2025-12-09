@@ -1,0 +1,291 @@
+main > section:nth-of-type(1){
+    display: flex;
+    flex-direction: column;
+
+    h1{
+        background-color: var(--text-color);
+        color: var(--background-color);
+        width: 100%;
+        text-align: center;
+        padding: 1em 0;
+        margin: 0;
+        font-size: 1.5em;
+        font-family: CeraProBold;
+    }
+
+    h2{
+        font-size: 1.2em;
+        font-family: CeraProBold;
+        background-color: var(--button-hover-background-color);
+        margin: 1em;
+        padding: 2em 1em;
+    }
+
+    > p{
+        text-align: center;
+    }
+}
+
+main section:nth-of-type(1) article{
+    display: flex;
+    flex-direction: row;
+    padding: 1em 1em 1em 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    gap: 1em;
+
+    button{
+        border: none;
+        background: none;
+        font-size: 1em;
+        font-family: CeraProMedium;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    button:nth-of-type(2), button:nth-of-type(3){
+        width: max-content;
+    }
+
+    svg{
+        width: 60%;
+    }
+
+    p{
+        font-family: CeraProRegular;
+    }
+}
+
+main > section:nth-of-type(2){
+    display: grid;
+    grid-template-columns: 100vw;
+    > ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3em 0;
+    }
+
+    > ul > li > a{
+        color: var(--link-color);
+        text-decoration: none;
+    }
+
+    > ul > li:nth-of-type(2) > a{
+        color: var(--text-color);
+        text-decoration: underline;
+    }
+
+    > ul > li > button{
+        background: none;
+        border: none;
+    }
+
+    > ul > li > button svg{
+        height: 1.5em;
+    }
+
+}
+
+main > section:nth-of-type(2) article{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 0.5em;
+    border: 1px solid var(--border-color);
+
+    a{
+        display: flex;
+        grid-column-start: 1;
+        grid-column-end: 7;
+        margin: 0;
+
+        /* https://css-tricks.com/css-only-carousel/ */
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+    
+    img{
+        width: 100%;
+    }
+
+    img:nth-of-type(1){
+        padding: 5em 0;
+    }
+    
+    img:nth-of-type(2){
+        height: 80%;
+    }
+
+    > p:nth-of-type(1){
+        grid-column-start: 6;
+        background-color: var(--accent-color);
+        font-size: 0.8em;
+        padding: 0.3em 0.8em;
+    }
+
+    ul{
+        grid-row-start: 3;
+        grid-column-start: 1;
+    }
+
+    li{
+        display: flex;
+        font-size: 0.8em;
+    }
+
+    li:nth-of-type(3) svg{
+        fill: var(--star-color);
+    }
+
+    a:nth-of-type(2){
+        grid-column-start: 1;
+        grid-row-start: 4;
+        text-decoration: none;
+    }
+
+    a:nth-of-type(2):visited{
+        color: var(--text-color);
+    }
+
+    a:nth-of-type(2):hover{
+        text-decoration: underline;
+    }
+
+    h3{
+        font-size: 1em;
+        margin: 1em 0;
+    }
+
+    p:nth-of-type(2){
+        grid-row-start: 5;
+        font-family: CeraProBold;
+        margin: 0 0 1em 0;
+    }
+
+    button{
+        cursor: pointer;
+    }
+
+    button:nth-of-type(1){
+        border: none;
+        border-radius: 50px;
+        height: 2.5em;
+        width: 2.5em;
+    }
+
+    button:nth-of-type(1):hover, button:nth-of-type(1):focus{
+        background-color: var(--border-color);
+        svg{
+            animation: heartAnimation 0.5s;
+        }
+    }
+
+    button:nth-of-type(2){
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        grid-row-start: 6;
+        background-color: var(--form-button-color);
+        font-family: CeraProMedium;
+        border: none;
+        border-radius: 50px;
+        width: 7rem;
+        height: 2.5rem;
+        font-size: 1em;
+    }
+
+    button:nth-of-type(2) svg{
+        height: 1.5rem;
+    }
+
+}
+
+main > section:nth-of-type(3){
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+    h2{
+        text-align: center;
+    }
+
+    ul{
+        display: flex;
+        margin: 1em 1em 2em 1em;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    li{
+        text-align: center;
+    }
+
+    a{
+        text-decoration: none;
+        font-size: 0.8em;
+        text-align: center;
+        color: var(--text-color);
+    }
+
+    a:hover{
+        text-decoration: underline
+    }
+
+    img{
+        width: 7em;
+    }
+}
+
+main > section:nth-of-type(4){
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    margin: 0 1em;
+    padding: 2em 0;
+    gap: 1em;
+
+    article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    a{
+        text-decoration: none;
+        color: var(--text-color);
+    }
+
+    img{
+        width: 15em;
+        height: 10em;
+
+        /* https://www.w3schools.com/css/css3_object-fit.asp */
+        object-fit: cover;
+    }
+
+    h3{
+        text-align: center;
+    }
+
+    p{
+        font-family: CeraProRegular;
+        text-align: center;
+    }
+
+    article a:nth-of-type(2){
+        width: 6em;
+        font-family: CeraProMedium;
+        font-size: 1em;
+        border: 2px solid var(--footer-button-background);
+        border-radius: 5em;
+        text-align: center;
+        padding: 0.5em;
+        justify-self: flex-end;
+        margin-top: auto;
+    }
+
+    article a:nth-of-type(2):hover{
+        color: var(--background-color);
+        background-color: var(--footer-button-background);
+        text-decoration: underline;
+    }
+}

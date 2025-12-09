@@ -1,626 +1,614 @@
 @font-face {
     font-family: "CeraProBlack";
     src: url(../fonts/Fontspring-DEMO-cerapro-black.otf);
-}
-
-@font-face {
+  }
+  
+  @font-face {
     font-family: "CeraProBold";
     src: url(../fonts/Fontspring-DEMO-cerapro-bold.otf);
-}
-
-@font-face {
+  }
+  
+  @font-face {
     font-family: "CeraProMedium";
     src: url(../fonts/Fontspring-DEMO-cerapro-medium.otf);
-}
-
-@font-face {
+  }
+  
+  @font-face {
     font-family: "CeraProLight";
     src: url(../fonts/Fontspring-DEMO-cerapro-light.otf);
-}
-
-@font-face {
+  }
+  
+  @font-face {
     font-family: "CeraProRegular";
     src: url(../fonts/Fontspring-DEMO-cerapro-regular.otf);
-}
-
-@font-face {
+  }
+  
+  @font-face {
     font-family: "CeraProThin";
     src: url(../fonts/Fontspring-DEMO-cerapro-thin.otf);
-}
-
-:root{
+  }
+  
+  :root {
     --link-color: #006db7;
+    --darkmode-link-color: #0399ff;
     --nav-text-color: #747474;
     --button-background-color: #f8f8f8;
     --border-color: #e0e0e0;
     --accent-color: #ffd502;
     --link-border-color: #005ad2;
     --text-color: black;
-    --background-color:white;
+    --background-color: white;
     --footer-background-color: rgb(32, 29, 72);
     --footer-button-background-color: rgb(24, 21, 45);
     --footer-button-background: rgb(81, 79, 104);
     --darkblue-background-color: #021c47;
     --form-button-color: rgb(233, 111, 20);
+    --form-button-color-hover: #c9692b;
     --button-hover-background-color: #f6f6f6;
     --beschikbaarheid-text-color: #007133;
     --button-gallery-color: #0009;
-}
+    --star-color: #fbab18;
+    --button-background-color-nav:#f2f2f2;
+    --red-color:#dd1a22;
+    --background-color-carousel: #e0c570;
+    --darkmode-accent: #1f1f1f;
+  }
+  
+  @keyframes heartAnimation {
+      25%  {transform: rotate(45deg);}
+      75%  {transform: rotate(-45deg);}
+      100% {transform: rotate(0deg);}
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+      html {
+          transition: none !important;
+          transform: none !important;
+          animation: none !important;
+          scroll-snap-type: none !important;
+      }
+  }
+  
+  @media (prefers-color-scheme: dark) {
+  
+    nav article{
+        background-color: var(--text-color);
 
-body{
+        a:nth-of-type(2), a:nth-of-type(3), a:nth-of-type(4) {
+            color: var(--background-color);
+        }
+        a:nth-of-type(6), a:nth-of-type(7), a:nth-of-type(8), a:nth-of-type(9) {
+            color: var(--background-color);
+        }
+
+        button{
+            background-color: var(--darkmode-accent);
+        }
+
+        button:hover, button:focus{
+            background-color: var(--nav-text-color);
+        }
+    }
+
+    svg{
+        fill: var(--background-color);
+    }
+
+    nav ul li:nth-of-type(2) svg{
+        fill: var(--text-color);
+    }
+
+    header {
+        background: var(--text-color);
+    }
+
+    main{
+        background-color: var(--text-color);
+        color: var(--background-color);
+
+        > nav {
+            p{
+              color: var(--background-color);
+            }
+            a{
+                color: var(--darkmode-link-color);
+            }
+        }
+
+        details{
+            summary{
+                background-color: var(--darkmode-accent);
+                svg{
+                    fill: var(--background-color);
+                }
+            }
+        }
+
+        section:nth-child(2){
+            > article > p{
+                background: var(--darkmode-accent);
+            }
+
+            > article > a{
+                background: var(--darkmode-accent);
+            }
+        }
+
+        section:nth-child(3){
+            article:nth-child(1){
+                > p:nth-of-type(1), p:nth-of-type(2){
+                    color: var(--text-color);
+                }
+
+                a > p{
+                    color: var(--darkmode-link-color);
+                }
+
+                p:nth-of-type(4) {
+                    color: var(--accent-color);
+                }
+
+                article{
+                    button{
+                        background-color: var(--darkmode-accent);
+                    }
+
+                    input{
+                        color: var(--background-color);
+                        background-color: var(--darkmode-accent);
+                    }
+
+                    input:hover, input:focus{
+                        border: 2px solid var(--accent-color);
+                    }
+            
+                    button:hover, button:focus{
+                        border: 2px solid var(--accent-color);
+                    }
+                }
+            }
+
+            article:nth-child(2){
+                button:nth-of-type(1){
+                    svg{
+                        fill: var(--text-color);
+                    }
+                }
+
+                button:nth-of-type(2){
+                    background-color: var(--darkmode-accent);
+                }
+
+                button:nth-of-type(2):hover, button:nth-of-type(2):focus{
+                    background-color: var(--nav-text-color);
+                }
+            }
+
+            article:nth-child(4){
+                a{
+                    color: var(--darkmode-link-color);
+                }
+            }
+
+            article:nth-child(5){
+                button{
+                    background-color: var(--text-color);
+                    color: var(--background-color);
+                }
+
+                button:hover, button:focus{
+                    p{
+                    color: var(--darkmode-link-color);
+                    }
+                }
+            }
+
+            article:nth-child(6){
+                a{
+                    color: var(--background-color);
+                }
+            }
+        }  
+
+        section:nth-child(7){
+            a{
+                color: var(--background-color);
+            }
+        }
+    }
+}
+  
+  nav article{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 0;
+      right: 9999px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: var(--background-color);
+      overflow-x: hidden;
+      transition: 0.3s;
+  
+      a {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          text-decoration: none;
+          color: var(--text-color);
+          transition: 0.3s;
+          border-bottom: 1px solid var(--border-color);
+          padding: 1rem 0;
+          margin: 0 1rem;
+          svg{
+              height: 1em;
+          }
+        }
+  
+      img{
+          height: 3rem;
+      }
+  
+      a:nth-of-type(1){
+          width: max-content;
+      }
+  
+      a:nth-of-type(2){
+          border-top: 3px solid var(--accent-color);
+      }
+  
+      a:nth-of-type(5):hover, a:nth-of-type(7):hover, a:nth-of-type(9):hover, a:nth-of-type(5):focus, a:nth-of-type(7):focus, a:nth-of-type(9):focus{
+          text-decoration: underline;
+        }
+      
+      a:nth-of-type(2), a:nth-of-type(3), a:nth-of-type(4), a:nth-of-type(5){
+          font-size: 1.8em;
+          font-family: CeraProBold;
+        }
+  
+      a:nth-of-type(6), a:nth-of-type(7), a:nth-of-type(8), a:nth-of-type(9){
+          font-family: CeraProRegular;
+        }
+  
+      a:nth-of-type(5){
+          color: var(--red-color);
+        }
+  
+      button {
+          position: absolute;
+          right: 0;
+          top: 0;
+          margin: 1em;
+          border: none;
+          border-radius: 5em;
+          height: 3em;
+          width: 3em;
+          cursor: pointer;
+          background-color: var(--button-background-color-nav);
+        }
+  
+      button:hover, button:focus{
+          background-color: var(--border-color);
+          svg{
+              animation: heartAnimation 0.5s;
+          }
+      }
+  }
+  
+  body {
     margin: 0;
     font-family: "CeraProMedium";
-}
-
-header{
+  }
+  
+  header {
     background: var(--background-color);
     border-bottom-style: solid;
     border-color: var(--accent-color);
-}
-
-header > nav{
-    display: flex;
-    align-items: center;
-    padding: 0 0.5em 0 1em;
-}
-
-header > nav img{
-    height: 2em;
-}
-
-header > nav > button img{
-    height: 1.5em;
-    padding: 0 0.5em 0 0;
-}
-
-main > nav{
+    z-index: 1;
+    top: -80px;
+    position: sticky;
+    transition: top 0.5s ease;
+   
+  
+      > nav{
+      display: flex;
+      align-items: center;
+      padding: 0 0.5em 0 1em;
+    }
+  
+    > nav > a img, > nav > ul > li > a svg{
+      height: 2em;
+    }
+  
+    > nav > button svg{
+      height: 1.5em;
+      padding: 0 0.5em 0 0;
+    }
+  
+  }
+  
+  main > nav {
     display: flex;
     padding: 1em 1em 1em 4em;
     gap: 1em;
-}
-
-main > nav > a{
-    text-decoration: none;
-    color: var(--link-color);
-}
-
-main > nav > a:hover{
-    text-decoration: underline;
-    color: var(--link-color);
-}
-
-main > nav > a:visited{
-    color: var(--link-color);
-}
-
-main > nav > p{
-    margin: 0;
-    color: var(--nav-text-color);
-}
-
-main > nav > img{
-    height: 1em;
-}
-
-nav > button{
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-header img{
-    height: 1em;
-}
-
-main > nav{
     font-size: 0.8em;
-}
-
-ul{
+  
+    > a{
+      text-decoration: none;
+      color: var(--link-color);
+    }
+  
+    > a:hover, > a:focus{
+      text-decoration: underline;
+    }
+  
+    p{
+      margin: 0;
+      color: var(--nav-text-color);
+    }
+  
+    svg{
+      height: 1em;
+    }
+  }
+  
+  nav{
+      > button{
+          background: none;
+          border: none;
+          font-size: 24px;
+          cursor: pointer;
+      }
+  
+      li a{
+          font-size: 0.8em;
+          text-decoration: none;
+          color: var(--text-color);
+      }
+  
+      article{
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          width: 0;
+          right: 9999px;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: var(--background-color);
+          overflow-x: hidden;
+          transition: 0.3s;
+      
+          a {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              text-decoration: none;
+              color: var(--text-color);
+              transition: 0.3s;
+              border-bottom: 1px solid var(--border-color);
+              padding: 1rem 0;
+              margin: 0 1rem;
+              svg{
+                  height: 1em;
+              }
+            }
+      
+          img{
+              height: 3rem;
+          }
+      
+          a:nth-of-type(1){
+              width: max-content;
+          }
+      
+          a:nth-of-type(2){
+              border-top: 3px solid var(--accent-color);
+          }
+      
+          a:nth-of-type(5):hover, a:nth-of-type(7):hover, a:nth-of-type(9):hover, a:nth-of-type(5):focus, a:nth-of-type(7):focus, a:nth-of-type(9):focus{
+              text-decoration: underline;
+            }
+          
+          a:nth-of-type(2), a:nth-of-type(3), a:nth-of-type(4), a:nth-of-type(5){
+              font-size: 1.8em;
+              font-family: CeraProBold;
+            }
+      
+          a:nth-of-type(6), a:nth-of-type(7), a:nth-of-type(8), a:nth-of-type(9){
+              font-family: CeraProRegular;
+            }
+      
+          a:nth-of-type(5){
+              color: var(--red-color);
+            }
+      
+          button {
+              position: absolute;
+              right: 0;
+              top: 0;
+              margin: 1em;
+              border: none;
+              border-radius: 5em;
+              height: 3em;
+              width: 3em;
+              cursor: pointer;
+              background-color: var(--button-background-color-nav);
+            }
+      
+          button:hover, button:focus{
+              background-color: var(--border-color);
+              svg{
+                  animation: heartAnimation 0.5s;
+              }
+          }
+      }
+    
+  }
+  
+  ul {
     list-style: none;
     display: flex;
     gap: 20px;
     margin: 0;
     padding: 0;
     margin-left: auto;
-}
-
-nav li a{
-    font-size: 0.8em;
-    text-decoration: none;
-    color: black;
-}
-
-main section:nth-child(2) > article:first-child {
-    text-align: right;
-    overflow: hidden;
-    display: flex;
-    position: relative;
-}
-
-main > section:nth-child(2) > article > a {
-    display: inline-flex;
-    height: 1.5rem;
-    background: var(--button-gallery-color);
-    color: var(--background-color);
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 0.5em;
-    padding: 0.6em;
-    bottom: 0;
-    position: absolute;
-    right: 1em;
-    width: max-content;
-    border-radius: 25em;
-    gap: 1em;
-}
-
-main > section:nth-child(2) > article > p {
-    display: inline-flex;
-    height: 1.5rem;
-    background: var(--button-gallery-color);
-    color: var(--background-color);
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 0.5em;
-    padding: 0.2em 0.4em;
-    top: 0;
-    position: absolute;
-    left: 1em;
-    width: max-content;
-    border-radius: 1em;
-    gap: 1em;
-    font-size: 0.9em;
-}
-
-main > section:nth-child(2) > article > a svg {
-    height: 1.5em;
-}
-
-
-main section:nth-child(2) article img{
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-top: 3em;
-    margin-bottom: 3em;
-}
-
-main section:nth-child(2) > article:nth-child(2){
-    display: grid;
-}
-
-main section:nth-child(2) > article:nth-child(2) p{
-    background-color: var(--accent-color);
-    font-size: 0.8em;
-    margin: 0.2em;
-    padding: 0.3em 0.8em;
-    align-self: flex-start;
-}
-
-main section:nth-child(3){
-    padding: 0 0.75em;
-    border-top: 2px solid var(--border-color);
-}
-
-main section:nth-child(3) > article:nth-child(1){
-    display: grid;
-    grid-template-columns: 5em 5em 5em 5em;
-}
-
-main section:nth-child(3) > article:nth-child(1) > p:nth-of-type(1), main section:nth-child(3) > article:nth-child(1) > p:nth-of-type(2){
-    background-color: var(--accent-color);
-    font-size: 0.8em;
-    margin: 0.2em;
-    padding: 0.3em 0.8em;
-    text-align: center;
-}
-
-main section:nth-child(3) > article:nth-child(1) > p:nth-of-type(1) {
-    grid-column-start: 1;
-    background-color: var(--accent-color);
-    font-size: 0.8em;
-    margin: 0.2em;
-    padding: 0.3em 0.8em;
-    align-self: flex-start;
-}
-
-main section:nth-child(3) > article:nth-child(1) > p:nth-of-type(2){
-    grid-column-start: 2;
-}
-
-main section:nth-child(3) > article:nth-child(1) > h1{
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    font-size: 1.5em;
-}
-
-main section:nth-child(3) > article:nth-child(1) > img{
-    grid-column-start: 4;
-    grid-row-start: 2;
-    align-self: center;
-}
-
-main section:nth-child(3) > article:nth-child(1) > button{
-    grid-column-start: 1;
-    grid-row-start: 3;
-    display: flex;
-    background:none;
-    border: none;
-    padding: 0;
-}
-
-main section:nth-child(3) > article:nth-child(1) > button > svg:nth-of-type(1), main section:nth-child(3) > article:nth-child(1) > button > svg:nth-of-type(2), main section:nth-child(3) > article:nth-child(1) > button > svg:nth-of-type(3){
-    fill: var(--accent-color);
-}
-
-main section:nth-child(3) > article:nth-child(1) > button > svg:nth-of-type(4){
-}
-
-main section:nth-child(3) > article:nth-child(1) > button > svg:nth-of-type(5){
-    fill: var(--border-color);
-}
-
-main section:nth-child(3) > article:nth-child(1) > button > p{
-    color: var(--link-border-color);
-    text-decoration: underline;
-}
-
-main section:nth-child(3) > article:nth-child(1) > p:nth-of-type(3){
-    grid-column-start: 1;
-    grid-row-start: 4;
-}
-
-main section:nth-child(3) > article:nth-child(1) > p:nth-of-type(4){
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 5;
-    color: var(--beschikbaarheid-text-color);
-    font-family: CeraProMedium;
-}
-
-main section:nth-child(3) > article:nth-child(1) > form{
-    grid-column-start: 1;
-    grid-row-start: 6;
-}
-
-main section:nth-child(3) > article:nth-child(2) > button{
-    text-decoration: none;
-    color: var(--text-color);
-    padding: 0.7em 1em;
-    border: 2px solid;
-    border-color: var(--link-border-color);
-    border-radius: 60em;
-}
-
-main section:nth-child(4) article{
-    background-color: var(--darkblue-background-color);
-    color: var(--background-color);
-}
-
-main section:nth-child(4) img{
-    display: flex;
-    width: 100%;
-}
-
-main section:nth-child(4) article:nth-child(3){
-    text-align: center;
-    color: var(--background-color);
-}
-
-main section:nth-child(4) article:nth-child(8){
-    text-align: right;
-    color: var(--background-color);
-    font-size: 0.85em;
-}
-
-main section:nth-child(4) article:nth-child(11){
-    text-align: right;
-}
-
-main section:nth-child(4) article:nth-child(11) a{
-    background-color: var(--button-background-color);
-    color: var(--text-color);
-    justify-content: center;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5em;
-    margin: 1em 1em 2em 1em;
-    background-color: var(--button-background-color);
-    padding: 0.5em;
-}
-
-main section:nth-child(4) article:nth-child(11) a:hover{
-    background-color: var(--button-hover-background-color);
-    text-decoration: underline;
-}
-
-main section:nth-child(4) article:nth-child(11) p{
-    font-family: CeraProMedium;
-    margin: 0;
-    padding: 0 0.5em 0 0.5em;
-}
-
-main section:nth-child(4) article:nth-child(11) svg{
-    height: 1em;
-    padding: 0 0.5em 0 0.5em;
-}
-
-main section:nth-child(4) h3{
-    padding: 0 1.2rem;
-    margin: 0;
-    font-size: 1.5em;
-    font-family: CeraProBold;
-    line-height: 1.5em;
-}
-
-main section:nth-child(4) p{
-    padding: 0 1.2rem 0 1.2rem;
-    margin: 0;
-    font-family: CeraProRegular;
-    line-height: 1.5em;
-}
-
-main section:nth-child(5) article{
-    padding: 1.2em;
-}
-
-main section:nth-child(5) article img{
-    width: 100%;
-}
-
-main details summary{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--button-background-color);
-    border-top: 1px solid var(--border-color);
-    padding: 1rem 1.2rem;
-    cursor: pointer;
-    min-width: 0;
-}
-
-main details summary svg{
-    height: 1.5em;
-    fill: var(--text-color);
-}
-
-details video{
-    width: 100%;
-}
-
-main details summary h2{
-    font-size: 1.1em;
-}
-
-details[open] summary svg path:nth-last-of-type(1){
-    display: inline;
-}
-
-details[open] summary svg path:nth-last-of-type(2){
-    display: none;
-}
-
-main section:nth-child(7){
-    padding: 2rem 1.2rem;
-    font-size: 1em;
-}
-
-main section:nth-child(7) p{
-    font-family: CeraProRegular;
-}
-
-main section:nth-child(7) ul{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    row-gap: 3em;
-    column-gap: 2em;
-    padding: 1.75em 0;
-}
-
-main section:nth-child(7) a{
-    text-decoration: none;
-    color: var(--text-color);
-    padding: 0.7em 1em;
-    border: 2px solid;
-    border-color: var(--link-border-color);
-    border-radius: 60em;
-    width: auto;
-}
-
-main section:nth-child(7) a:hover{
-    text-decoration: underline;
-    color: var(--background-color);
-    background-color: var(--link-border-color);
-}
-
-footer{
+  }
+  footer {
     background-color: var(--footer-background-color);
-}
-
-footer p{
-    color: var(--background-color);
-}
-
-footer section:nth-child(1){
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-}
-
-footer section:nth-child(1) p {
-    font-size: 1.5em;
-    font-family: CeraProRegular;
-    margin: 0;
-}
-
-footer section:nth-child(1) svg{
-    fill: var(--background-color);
-    height: 2em;
-}
-
-footer section:nth-child(3) p {
-    font-family: CeraProMedium;
-    margin-top: 1em;
-}
-
-form{
-    display: flex;
-    flex-direction: row;
-    width: 100%;;
-}
-
-form label{
-    text-align: left;
-    font-size: 0.9em;
-    font-family: CeraProMedium;
-    color: var(--background-color);
-}
-
-form input[type=email]{
-    padding: 1.5em 1.5em;
-    border: none;
-    font-family: CeraProRegular;
-    width: 100%;
-}
-
-form button{
-    background-color: var(--form-button-color);
-    border: none;
-    padding: 1em 1.5em;
-    border-radius: 0 6px 6px 0;
-    font-family: CeraProBold;
-    cursor: pointer;
-}
-
-form button svg{
-    height: 1.2em;
-}
-
-footer section:nth-child(6) p{
-    font-size: 0.9em;
-    font-family: CeraProRegular;
-    text-align: left;
-    margin: 0;
-    padding-bottom: 2em;
-}
-
-footer section{
-    padding:2em 1em 0em 1em;
-}
-
-footer > section > button{
-    border: none;
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    background-color: var(--footer-button-background-color);
-    color: var(--text-color);
-    height: 3em;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em;
-}
-
-footer > section > button p{
-    font-size: 1.5em;
-    font-family: CeraProRegular;
-}
-
-footer section article summary{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border: none;
-    border-top: 1px solid var(--background-color);
-    cursor: pointer;
-    background-color: var(--footer-background-color);
-    color: var(--background-color);
-    padding: 1em;
-    font-family: CeraProBold;
-    font-size: 1.2em;
-}
-
-footer section article details ul{
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-}
-
-footer section article details li {
-    border-top: 1px solid var(--background-color);
-    padding: 1em;
-}
-
-footer section article summary:hover{
-    background-color: var(--footer-button-background);
-}
-
-footer section details svg{
-    height: 1em;
-}
-
-footer section > img{
-    height: 75px;
-}
-
-footer section:nth-child(2) ul{
-    display: flex;
-    flex-direction: column;
-}
-
-footer section:nth-child(4){
-    padding: 1em 0 1em 0;
-}
-
-footer section:nth-child(5){
-    display: grid;
-    grid-template-columns: 3em 3em 3em 3em;
-    gap: 1em;
-}
-
-footer section:nth-child(5) p{
-    grid-column-start: 1;
-    grid-column-end: 5;
-}
-
-footer section:nth-child(5) img{
-    grid-row-start: 2;
-    height: 3em;
-}
-
-footer section:nth-child(6) ul{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    row-gap: 1.5em;
-    padding-bottom: 2em;
-}
-
-footer section:nth-child(6) a{
-    font-size: 0.8em;
-}
-
-footer li a{
-    font-family: CeraProRegular;
-    color: var(--background-color);
-    text-decoration: none;
-}
-
-footer a:hover{
-    text-decoration: underline;
-}
-
-form svg{
-    width: 1em;
-    height: auto;
-    fill: var(--text-color);
-}
+    p {
+      color: var(--background-color);
+    }
+    section:nth-child(1) {
+      display: flex;
+      flex-direction: row;
+      gap: 1em;
+      p {
+          font-size: 1.5em;
+          font-family: CeraProRegular;
+          margin: 0;
+      }
+      svg {
+          fill: var(--background-color);
+          height: 2em;
+        }
+    }
+    section:nth-child(2) ul {
+      display: flex;
+      flex-direction: column;
+    }
+    section:nth-child(3) p {
+      font-family: CeraProMedium;
+      margin-top: 1em;
+    }
+    section:nth-child(4) {
+      padding: 1em 0 1em 0;
+    }
+    section:nth-child(5) {
+      display: grid;
+      grid-template-columns: 3em 3em 3em 3em;
+      gap: 1em;
+      p {
+        grid-column-start: 1;
+        grid-column-end: 5;
+      }
+      img {
+        grid-row-start: 2;
+        height: 3em;
+      }
+    }
+    
+    form {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      label {
+          text-align: left;
+          font-size: 0.9em;
+          font-family: CeraProMedium;
+          color: var(--background-color);
+        }
+        input[type="email"] {
+          padding: 1.5em 1.5em;
+          border: none;
+          font-family: CeraProRegular;
+          width: 100%;
+        }
+        button {
+          background-color: var(--form-button-color);
+          border: none;
+          padding: 1em 1.5em;
+          border-radius: 0 6px 6px 0;
+          font-family: CeraProBold;
+          cursor: pointer;
+          svg {
+              height: 1.2em;
+            }
+        }
+        svg {
+          width: 1em;
+          height: auto;
+          fill: var(--text-color);
+        }
+    }
+    section:nth-child(6) {
+      ul {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          row-gap: 1.5em;
+          padding-bottom: 2em;
+      }
+      a {
+          font-size: 0.8em;
+      }
+      p {
+          font-size: 0.9em;
+          font-family: CeraProRegular;
+          text-align: left;
+          margin: 0;
+          padding-bottom: 2em;
+        }
+  }
+    section {
+      padding: 2em 1em 0em 1em;
+      article summary {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          border: none;
+          border-top: 1px solid var(--background-color);
+          cursor: pointer;
+          background-color: var(--footer-background-color);
+          color: var(--background-color);
+          padding: 1em;
+          font-family: CeraProBold;
+          font-size: 1.2em;
+        }
+        article summary:hover, article summary:focus {
+          background-color: var(--footer-button-background);
+        }
+        article details ul {
+          display: flex;
+          flex-direction: column;
+          gap: 0;
+        }
+        article details li {
+          border-top: 1px solid var(--background-color);
+          padding: 1em;
+        }
+        details svg {
+          height: 1em;
+        }
+        > img {
+          height: 75px;
+        }
+    }
+    > section > button {
+      border: none;
+      cursor: pointer;
+      display: flex;
+      flex-direction: row;
+      background-color: var(--footer-button-background-color);
+      color: var(--text-color);
+      height: 3em;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em;
+      font-size: 1em;
+      font-family: CeraProRegular;
+      color: var(--background-color);
+    }
+    li a {
+      font-family: CeraProRegular;
+      color: var(--background-color);
+      text-decoration: none;
+    }
+    a:hover, a:focus {
+      text-decoration: underline;
+    }
+  }
