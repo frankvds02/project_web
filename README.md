@@ -83,13 +83,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown1.png" width="375px" alt="breakdown van de hele pagina (1)">
+  <img src="readme-images/breakdown2.png" width="375px" alt="breakdown van de hele pagina (2)">
+  <img src="readme-images/breakdown3.png" width="375px" alt="breakdown van de hele pagina (3)">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/breakdownschets_menu.png" width="375px" alt="breakdown van een dynamisch deel">
 
 </details>
 
@@ -109,20 +108,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Frank          | Rohit              | Lindsy      |
-  | ---            | ---                | ---          |
-  | Font krijgen   | en dit             | en ik dit    |
-  | Artikelinformatie opmaken | dit als er tijd is | nog een punt |
-  | ...            | ...                | ...          |
+  | Frank                      | Rohit              | Lindsy      |
+  | ---                        | ---                | ---         |
+  | Font krijgen               | -                  | -           |
+  | Artikelinformatie opmaken  | -                  | -           |
+  | Buttons boven image zetten | -                  | -           |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Font downloaden van het internet en in code stoppen met @fontface
+  - Artikelinformatie eerst uittekenen en dan in een grid stoppen
+  - Buttons bovenop image met position: absolute
 
 </details>
 
@@ -142,20 +140,23 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Frank                            | Daniel          | Jasmijn    |
+  | ---                              | ---             | ---        |
+  | Producten weergeven (carousel?)  | -               | -          |
+  | Achtergrond image overloop       | -               | -          |
+  | Dropdown knoppen uitwerking      | -               | -          |
+  | SVG kleur veranderen             | -               | -          |
+  | Footer flexbox links uitlijnen   | -               | -          |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Carousel kan gemaakt worden met een overflow
+  - Image overloop oplossen door ze in een flexbox te zetten
+  - Dropdown knoppen overzetten naar een summary tag
+  - SVG niet lokaal opslaan, maar path opzoeken
+  - Footer flexbox links uitlijnen door column gap weg te halen
 
 </details>
 
@@ -189,20 +190,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Frank                        | Rohit          | Lindsy    |
+  | ---                          | ---            | ---       |
+  | Hamburger menu               | -              | -         |
+  | Pagina 2 cards               | -              | -         |
+  | Teller in artikelinformatie  | -              | -         |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Hamburger menu uitwerken met JavaScript
+  - Cards op pagina 2 in een flexbox en aparte articles
+  - Teller bij artikelinformatie kan met JavaScript en telt voor Surface Plane
 
 </details>
 
@@ -244,8 +244,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
-
+  1. <a href="https://www.lego.com/nl-nl/product/tropical-aquarium-10366">Pagina 1</a>
+  2. <a href="https://www.lego.com/nl-nl/categories/new-sets-and-products">Pagina 2</a>
+  3. <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_full">Hamburger menu</a>
+  4. <a href="https://stackoverflow.com/questions/3790935/can-i-hide-the-html5-number-input-s-spin-box">Teller</a>
+  5. <a href="/* https://css-tricks.com/css-only-carousel/ */">Carousel overflow</a>
+  6. <a href="/* https://www.w3schools.com/css/css3_object-fit.asp */">Object fit</a>
+  7. <a href="https://stackoverflow.com/questions/18795028/javascript-remove-li-without-removing-ul">HTML weghalen met JavaScript</a>
+  8. <a href="https://chatgpt.com/">ChatGPT (Teller clamp)</a>
+  9. <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY">Sticky header bij scroll</a>
+  10. <a href="https://www.w3schools.com/css/css3_animations.asp">Animaties</a>
+  11. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion">Reduced motion</a>
+  12. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-color-scheme">Dark mode</a>
+  
 </details>
