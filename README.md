@@ -176,7 +176,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Één h1 element per pagina
   - Alle images hebben relevante alt tekst
 
-  #### 
+  #### Nog slecht
+  - Dark mode nog niet beschikbaar
+  - Links zijn niet beschrijvend
+  - Geen focus states, alleen hover
 
 </details>
 
