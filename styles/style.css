@@ -220,6 +220,17 @@
         }
     }
 }
+
+body > a{
+  background-color: var(--border-color);
+  position: absolute;
+  right: 9999px;
+  z-index: 2;
+}
+
+body > a:focus{
+  right: 0px;
+}
   
   nav article{
       display: flex;
