@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tropisch Aquarium</title>
-    <link rel="icon" href="images/legoLogo.png">
-    <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/indexStyle.css" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
+    <a href="#main">Ga naar inhoud</a>
     <header>
       <nav>
         <button onclick="openNav()" aria-label="Menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="currentColor"><path d="M6 10c0-1.063.875-2 2-2h24c1.063 0 2 .938 2 2 0 1.125-.938 2-2 2H8c-1.125 0-2-.875-2-2Zm0 10c0-1.063.875-2 2-2h24c1.063 0 2 .938 2 2 0 1.125-.938 2-2 2H8c-1.125 0-2-.875-2-2Zm28 10c0 1.125-.938 2-2 2H8c-1.125 0-2-.875-2-2 0-1.063.875-2 2-2h24c1.063 0 2 .938 2 2Z"/></svg></button>
@@ -29,7 +29,7 @@
         </ul>
 
         <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_full -->
-        <article aria-label="Menu">
+        <article>
             <button onclick="closeNav()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="currentColor"><path d="m31.586 10.54-9.5 9.5 9.437 9.437c.625.562.625 1.5 0 2.062-.562.625-1.5.625-2.062 0l-9.5-9.437-9.438 9.437c-.562.625-1.5.625-2.062 0-.625-.562-.625-1.5 0-2.125l9.437-9.437-9.437-9.438c-.625-.562-.625-1.5 0-2.125.562-.562 1.5-.562 2.125 0l9.437 9.5 9.438-9.437c.562-.625 1.5-.625 2.125 0 .562.562.562 1.5 0 2.062Z"/></svg></button>
             <a href="#" aria-label="LEGO"><img src="images/legoLogo.png" alt="LEGO"></a>
             <a href="#" aria-label="Winkelen">Winkelen<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="currentColor"><path d="M28.406 18.594c.813.75.813 2.062 0 2.812l-12 12a1.927 1.927 0 0 1-2.812 0 1.927 1.927 0 0 1 0-2.812l10.562-10.625L13.594 9.406a1.927 1.927 0 0 1 0-2.812 1.927 1.927 0 0 1 2.812 0l12 12Z"/></svg></a>
@@ -43,14 +43,14 @@
         </article>
       </nav>
     </header>
-    <main>
+    <main id="main">
       <nav>
         <a href="#" aria-label="Terug naar LEGO Icons">LEGO Icons</a>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="currentColor"><path d="M28.406 18.594c.813.75.813 2.062 0 2.812l-12 12a1.927 1.927 0 0 1-2.812 0 1.927 1.927 0 0 1 0-2.812l10.562-10.625L13.594 9.406a1.927 1.927 0 0 1 0-2.812 1.927 1.927 0 0 1 2.812 0l12 12Z"/></svg>
         <p>Tropisch aquarium</p>
       </nav>
       <section>
-        <article aria-label="Product afbeeldingen">
+        <article>
           <p>1/21</p>
           <a href="#"  aria-label="Alle afbeeldingen weergeven"
             ><svg
@@ -68,7 +68,7 @@
         </article>
       </section>
       <section>
-        <article aria-label="Product informatie">
+        <article>
           <p>Nieuw</p>
           <p>Exclusief</p>
           <h1>Tropisch aquarium</h1>
@@ -123,18 +123,17 @@
         </a>
           <p>559,99</p>
           <p>Nu beschikbaar</p>
-          <article aria-label="Product aantal">
+          <article>
             <button aria-label="+1 product aantal">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="currentColor"><path d="M35 20c0 .875-.688 1.5-1.5 1.5h-27c-.875 0-1.5-.625-1.5-1.5 0-.813.625-1.5 1.5-1.5h27c.813 0 1.5.688 1.5 1.5Z"/></svg>
             </button>
-            <label>Aantal producten</label>
             <input type="number" value="1" min="1" max="3"/>
             <button aria-label="-1 product aantal">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="currentColor"><path d="M22 7v11h11c1.063 0 2 .938 2 2 0 1.125-.938 2-2 2H22v11c0 1.125-.938 2-2 2-1.125 0-2-.875-2-2V22H7c-1.125 0-2-.875-2-2 0-1.063.875-2 2-2h11V7c0-1.063.875-2 2-2 1.063 0 2 .938 2 2Z"></path></svg>
             </button>
           </article>
         </article>
-        <article aria-label="Product toevoegen aan tas/wensenlijst">
+        <article>
           <button  aria-label="Toevoegen aan tas">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="currentColor"><path d="M16 11v3h8v-3c0-2.188-1.813-4-4-4-2.25 0-4 1.813-4 4Zm-3 6H9v13c0 1.688 1.313 3 3 3h16a3 3 0 0 0 3-3V17h-4v3.5c0 .875-.688 1.5-1.5 1.5-.875 0-1.5-.625-1.5-1.5V17h-8v3.5c0 .875-.688 1.5-1.5 1.5-.875 0-1.5-.625-1.5-1.5V17Zm0-3v-3c0-3.813 3.125-7 7-7 3.813 0 7 3.188 7 7v3h4c1.625 0 3 1.375 3 3v13c0 3.313-2.688 6-6 6H12c-3.313 0-6-2.688-6-6V17a3 3 0 0 1 3-3h4Z"/></svg>
             In Tas
@@ -151,7 +150,7 @@
             </svg>
           </button>
         </article>
-        <article aria-label="Overige informatie">
+        <article>
           <ul>
             <li>18</li>
             <li>5155</li>
@@ -161,7 +160,7 @@
             <li>Item</li>
           </ul>
         </article>
-        <article aria-label="LEGO Insiders en levering">
+        <article>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 40 40"
@@ -210,7 +209,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="currentColor"><path d="M28.086 18.906c.562.625.562 1.563 0 2.125l-12 12c-.625.625-1.563.625-2.125 0a1.369 1.369 0 0 1 0-2.062L24.898 20.03l-10.937-11a1.369 1.369 0 0 1 0-2.062 1.369 1.369 0 0 1 2.062 0l12.063 11.937Z"/></svg>
             </button>
         </article>
-        <article aria-label="Bouwinstructies">
+        <article>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="currentColor"><path d="M16.111 9.687c-.614 0-1.111.533-1.111 1.19v1.068h4.222v-1.068c0-.657-.497-1.19-1.11-1.19h-2Zm4.667 2.258H25v-1.068c0-.657-.497-1.19-1.111-1.19h-2c-.614 0-1.111.533-1.111 1.19v1.068ZM26 13.214H14V20h12v-6.786Z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M31 5H9v30h22V5ZM9 2a3 3 0 0 0-3 3v30a3 3 0 0 0 3 3h22a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H9Z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M14 25c0-.552.433-1 .968-1h10.064c.535 0 .968.448.968 1s-.433 1-.968 1H14.968c-.535 0-.968-.448-.968-1Zm0 4c0-.552.433-1 .968-1h10.064c.535 0 .968.448.968 1s-.433 1-.968 1H14.968c-.535 0-.968-.448-.968-1Z"/></svg>
             <a href="#" aria-label="Bouwinstructies">Bouwinstructies</a>
         </article>
@@ -233,7 +232,7 @@
               />
             </svg>
           </summary>
-          <article aria-label="Video">
+          <article>
             <video controls>
               <source src="images/aquarium_video4.mp4" type="video/mp4" />
               Je browser ondersteunt geen HTML video.
@@ -250,7 +249,7 @@
               of kantoor, maar dan zonder het onderhoud.
             </p>
           </article>
-          <article aria-label="Achtergrond afbeeldingen">
+          <article>
             <img src="images/background1.webp" alt="" />
             <img src="images/background2.webp" alt="" />
           </article>
@@ -287,7 +286,7 @@
                 </li>
             </ul>
           </article>
-          <article aria-label="Achtergrond afbeeldingen">
+          <article>
             <img src="images/background3.webp" alt="" />
             <img src="images/background4.webp" alt="" />
           </article>
@@ -303,8 +302,8 @@
             <h3>
               Duik in het plezier en ontdek nog meer verbluffende LEGO sets
             </h3>
-            <article aria-label="Meer LEGO sets">
-            <article aria-label="LEGO sets">
+            <article>
+            <article>
                 <button aria-label="Toevoegen aan wensenlijst"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="currentColor"><path d="m18.063 34.117-.125-.188L7 23.804a9.458 9.458 0 0 1-3-6.938v-.187c0-4.375 3.125-8.188 7.438-9 2.437-.5 4.937.062 7 1.5.562.375 1.062.875 1.562 1.375.25-.25.5-.563.813-.813l.75-.562c2-1.438 4.5-2 6.937-1.5a9.167 9.167 0 0 1 7.5 9v.188c0 2.624-1.125 5.124-3.063 6.937L22 33.929l-.125.188c-.5.437-1.188.75-1.875.75-.75 0-1.375-.313-1.938-.75Zm.875-20.25c-.063 0-.063 0-.063-.063l-1.125-1.25c-1.438-1.625-3.625-2.313-5.75-1.938a6.158 6.158 0 0 0-5 6.063v.188c0 1.812.688 3.5 2 4.687l11 10.188 10.938-10.188A6.289 6.289 0 0 0 33 16.866v-.187c0-2.937-2.125-5.5-5.063-6.062-2.125-.376-4.312.312-5.75 1.937l-1.125 1.25c0 .063 0 .063-.062.125-.25.25-.625.438-1 .438-.438 0-.813-.188-1.063-.438v-.063Z"/></svg></button>
                 <p>Nieuw</p>
                 <a href="#">
@@ -323,7 +322,7 @@
                 </button>
             </article>
 
-            <article aria-label="LEGO set">
+            <article>
                 <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="currentColor"><path d="m18.063 34.117-.125-.188L7 23.804a9.458 9.458 0 0 1-3-6.938v-.187c0-4.375 3.125-8.188 7.438-9 2.437-.5 4.937.062 7 1.5.562.375 1.062.875 1.562 1.375.25-.25.5-.563.813-.813l.75-.562c2-1.438 4.5-2 6.937-1.5a9.167 9.167 0 0 1 7.5 9v.188c0 2.624-1.125 5.124-3.063 6.937L22 33.929l-.125.188c-.5.437-1.188.75-1.875.75-.75 0-1.375-.313-1.938-.75Zm.875-20.25c-.063 0-.063 0-.063-.063l-1.125-1.25c-1.438-1.625-3.625-2.313-5.75-1.938a6.158 6.158 0 0 0-5 6.063v.188c0 1.812.688 3.5 2 4.687l11 10.188 10.938-10.188A6.289 6.289 0 0 0 33 16.866v-.187c0-2.937-2.125-5.5-5.063-6.062-2.125-.376-4.312.312-5.75 1.937l-1.125 1.25c0 .063 0 .063-.062.125-.25.25-.625.438-1 .438-.438 0-.813-.188-1.063-.438v-.063Z"/></svg></button>
                 <p>Nieuw</p>
                 <a href="#">
@@ -342,7 +341,7 @@
                 </button>
             </article>
 
-            <article aria-label="LEGO set">
+            <article>
                 <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="currentColor"><path d="m18.063 34.117-.125-.188L7 23.804a9.458 9.458 0 0 1-3-6.938v-.187c0-4.375 3.125-8.188 7.438-9 2.437-.5 4.937.062 7 1.5.562.375 1.062.875 1.562 1.375.25-.25.5-.563.813-.813l.75-.562c2-1.438 4.5-2 6.937-1.5a9.167 9.167 0 0 1 7.5 9v.188c0 2.624-1.125 5.124-3.063 6.937L22 33.929l-.125.188c-.5.437-1.188.75-1.875.75-.75 0-1.375-.313-1.938-.75Zm.875-20.25c-.063 0-.063 0-.063-.063l-1.125-1.25c-1.438-1.625-3.625-2.313-5.75-1.938a6.158 6.158 0 0 0-5 6.063v.188c0 1.812.688 3.5 2 4.687l11 10.188 10.938-10.188A6.289 6.289 0 0 0 33 16.866v-.187c0-2.937-2.125-5.5-5.063-6.062-2.125-.376-4.312.312-5.75 1.937l-1.125 1.25c0 .063 0 .063-.062.125-.25.25-.625.438-1 .438-.438 0-.813-.188-1.063-.438v-.063Z"/></svg></button>
                 <p>Nieuw</p>
                 <a href="#">
@@ -362,7 +361,7 @@
             </article>
             </article>
           </article>
-          <article aria-label="Achtergrond afbeelding">
+          <article>
             <img src="images/background5.webp" alt="" />
           </article>
           <article>
@@ -433,7 +432,7 @@
         </details>
       </section>
       <section>
-        <article aria-label="Soortgelijke producten">
+        <article>
           <p>Soortgelijke producten zoeken:</p>
           <ul>
             <li><a href="#" aria-label="Soortgelijke LEGO Icons producten">LEGO Icons</a></li>
@@ -471,9 +470,9 @@
       <section>
         <p>ABBONEREN OP DIGITALE MARKETING EMAILS</p>
         <form>
-          <label>E-mail adres</label>
+            <label>E-mail adres</label>
           <input type="email" placeholder="Je emailadres" required />
-  
+
           <button type="submit" aria-label="E-mailadres opgeven">
             <svg viewBox="0 0 18 28" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -484,7 +483,7 @@
         </form>
       </section>
       <section>
-        <article aria-label="Over ons">
+        <article>
           <details>
             <summary>
               OVER ONS
@@ -509,7 +508,7 @@
             </ul>
           </details>
         </article>
-        <article aria-label="Ondersteuning">
+        <article>
           <details>
             <summary>
               ONDERSTEUNING
@@ -534,7 +533,7 @@
             </ul>
           </details>
         </article>
-        <article aria-label="Attracties">
+        <article>
           <details>
             <summary>
               ATTRACTIES
@@ -555,7 +554,7 @@
             </ul>
           </details>
         </article>
-        <article aria-label="Meer over ons">
+        <article>
           <details>
             <summary>
               MEER OVER ONS
@@ -588,7 +587,7 @@
         <a href="#" aria-label="YouTube"><img src="images/youtube.svg" alt="YouTube" /></a>
       </section>
       <section>
-        <article aria-label="Overige informatie">
+        <article>
           <ul>
             <li><a href="#">Privacybeleid</a></li>
             <li><a href="#">Cookies</a></li>
@@ -598,7 +597,7 @@
             <li><a href="#">Cookie instellingen</a></li>
           </ul>
         </article>
-        <article aria-label="Disclaimer">
+        <article>
           <p>
             LEGO System AS, DK7190 Billund, Denmark. Personen die online
             aankopen doen, moeten 18 jaar of ouder zijn. LEGO, het LEGO logo, de
