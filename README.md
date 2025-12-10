@@ -109,7 +109,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Frank                      | Rohit                  | Lindsy      |
+  | Frank                      | Rohit                  | Linsy       |
   | ---                        | ---                    | ---         |
   | Font krijgen               | Event card maken       | -           |
   | Artikelinformatie opmaken  | Grid of flex gebruiken | -           |
@@ -201,7 +201,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Frank                        | Rohit                                    |  Lindsy    |
+  | Frank                        | Rohit                                    |  Linsy     |
   | ---                          | ---                                      | ---        |
   | Hamburger menu               | Spotify onderdeel wegklikken             | -          |
   | Pagina 2 cards               | Articles niet goed in midden uitgelijnd  | -          |
