@@ -102,7 +102,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  HTML nog flink mee bezig, maar duidelijk wat er gedaan moet worden.
+  Al goed begin met CSS gemaakt.
 
 
   ### Agenda voor meeting
@@ -134,7 +135,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  HTML (grootendeels) af en vormgeving van eerste pagina bijna klaar.
 
 
   ### Agenda voor meeting
@@ -193,7 +194,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Eerste pagina bijna klaar, met uitzondering van de artikelinformatie.
+  Basis van tweede pagina gemaakt.
 
 
   ### Agenda voor meeting
@@ -230,15 +232,28 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb geleerd hoe ik een carousel van plaatjes en tekst kan maken
+  en opmaken d.m.v. flexbox/grid en overflow x. Verder heb ik veel
+  kennis opgedaan in JavaScript, zoals tijdens het maken van een werkende
+  teller met een min en max waarde. Ook heb ik geleerd om een video te
+  embedden binnen HTML.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/goed.png" width="375px" alt="goed">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Het maken van animaties voor mijn hamburger menu en summary knoppen
+  waren uiteindelijk niet gelukt. Na veel trial & error is eruit gekomen
+  dat ik waarschijnlijk JavaScript had moeten gebruiken ervoor en dat is
+  er helaas niet van gekomen. Het vervangen van een SVG path is half
+  gelukt, voor de ene SVG werkte het wel, maar precies dezelfde JS code
+  werkte voor de andere SVG weer niet. Tot slotte is mijn hele dark mode
+  gebroken toen ik mijn CSS van 2 naar 3 bestanden overzette. Alles werkte
+  perfect totdat ik de prefers-dark-mode code over had gezet naar het
+  nieuwe bestand en nu wordt deels van de code daaruit gewoon genegeerd
+  door de HTML.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/slecht.png" width="375px" alt="slecht">
 </details>
 
 
