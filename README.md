@@ -170,7 +170,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  #### Verbeteringen
+  - HTML kan gevalideert worden (werkt niet bij LEGO.com)
+  - Kan door de hele pagina heen tabben met het toetsenbord
+  - Één h1 element per pagina
+  - Alle images hebben relevante alt tekst
+
+  #### 
 
 </details>
 
