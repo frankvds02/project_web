@@ -230,6 +230,7 @@ body > a{
 
 body > a:focus{
   right: 0px;
+    color: var(--text-color);
 }
   
   nav article{
