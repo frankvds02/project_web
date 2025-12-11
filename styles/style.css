@@ -29,14 +29,16 @@
   }
   
   :root {
-    --link-color: #006db7;
-    --nav-text-color: #747474;
+    color-scheme: light-dark;
+      
+    --link-color: #006db7, #0399ff;
+    --nav-text-color: #747474, #d1d1d1;
     --button-background-color: #f8f8f8;
     --border-color: #e0e0e0;
     --accent-color: #ffd502;
     --link-border-color: #005ad2;
-    --text-color: black;
-    --background-color: white;
+    --text-color: black, white;
+    --background-color: white, black;
     --footer-background-color: rgb(32, 29, 72);
     --footer-button-background-color: rgb(24, 21, 45);
     --footer-button-background: rgb(81, 79, 104);
@@ -45,34 +47,18 @@
     --form-button-color-hover: #c9692b;
     --button-hover-background-color: #f6f6f6;
     --beschikbaarheid-text-color: #007133;
-    --button-gallery-color: #00000099;
+    --button-gallery-color: #00000099, rgb(194, 194, 194);
     --star-color: #fbab18;
     --button-background-color-nav:#f2f2f2;
     --red-color:#dd1a22;
     --background-color-carousel: #e0c570;
-    --teller-background-color: white;
+    --teller-background-color: white, #1f1f1f;
     --white-text: white;
-    --summary-background-color: #f8f8f8;
+    --summary-background-color: #f8f8f8, #1f1f1f;
     --text-color-black: black;
-    --header-background-color: #f6f6f6;
-    --header2-background-color: black;
+    --header-background-color: #f6f6f6, #1f1f1f;
+    --header2-background-color: black, #1f1f1f;
   }
-
-
-  @media (prefers-color-scheme: dark) {
-    :root{
-      --text-color:white;
-      --background-color: black;
-      --link-color: #0399ff;
-      --teller-background-color: #1f1f1f;
-      --button-gallery-color: rgb(194, 194, 194);
-      --summary-background-color: #1f1f1f;
-      --nav-text-color: #d1d1d1;
-      --header-background-color: #1f1f1f;
-      --header2-background-color: #1f1f1f;
-    }
-}
-
   
   @keyframes heartAnimation {
       25%  {transform: rotate(45deg);}
