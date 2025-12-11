@@ -147,6 +147,7 @@ main > section:nth-of-type(2) article{
         grid-column-start: 1;
         grid-row-start: 4;
         text-decoration: none;
+        color: var(--text-color);
     }
 
     a:nth-of-type(2):visited{
@@ -160,7 +161,6 @@ main > section:nth-of-type(2) article{
     h3{
         font-size: 1em;
         margin: 1em 0;
-        color: var(--text-color);
     }
 
     p:nth-of-type(2){
