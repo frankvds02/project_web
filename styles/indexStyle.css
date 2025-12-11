@@ -139,7 +139,7 @@ main section:nth-child(3) {
     }
 
     > article:nth-child(1) > a > p {
-        color: var(--link-border-color);
+        color: var(--link-color);
         text-decoration: underline;
         margin-left: 0.5em;
     }
@@ -150,6 +150,7 @@ main section:nth-child(3) {
         font-size: 1.5em;
         font-family: CeraProBold;
         margin: 0;
+        color: var(--text-color);
       }
 
     > article:nth-child(1) > p:nth-of-type(4) {
@@ -171,6 +172,8 @@ main section:nth-child(3) {
             width: 33%;
             border: 1px solid var(--nav-text-color);
             text-align: center;
+            background-color: var(--teller-background-color);
+            color: var(--text-color);
         }
 
         input:hover, input:focus{
@@ -181,6 +184,10 @@ main section:nth-child(3) {
             width: 33%;
             border: 1px solid var(--nav-text-color);
             cursor: pointer;
+            background-color: var(--teller-background-color);
+            svg{
+                fill: var(--text-color);
+            }
         }
 
         button:hover, button:focus{
@@ -247,6 +254,7 @@ main section:nth-child(3) {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             row-gap: 0.5em;
+            color: var(--text-color);
 
             li{
                 text-align: center;
@@ -273,6 +281,7 @@ main section:nth-child(3) {
         p{
             grid-column-start: 2;
             margin: 0;
+            color: var(--text-color);
         }
 
         a{
@@ -287,6 +296,7 @@ main section:nth-child(3) {
 
         svg{
             height: 1.5em;
+            color: var(--text-color);
         }
     }
 
@@ -301,6 +311,7 @@ main section:nth-child(3) {
             width: 100%;
             margin: 0;
             align-items: center;
+            color: var(--text-color);
 
             svg:nth-of-type(2){
                 align-self: flex-end;
@@ -335,6 +346,7 @@ main section:nth-child(3) {
         svg{
             height: 2em;
             transform: rotate(-10deg);
+            color: var(--text-color);
         }
     }
 }
@@ -342,7 +354,7 @@ main section:nth-child(3) {
 main section:nth-child(4) {
     article {
         background-color: var(--darkblue-background-color);
-        color: var(--background-color);
+        color: var(--white-text);
     }
 
     img {
@@ -352,11 +364,11 @@ main section:nth-child(4) {
 
     article:nth-child(3) {
         text-align: center;
-        color: var(--background-color);
+        color: var(--white-text);
     }
 
     article:nth-child(6) {
-        color: var(--background-color);
+        color: var(--white-text);
 
         ul {
             overflow-x: scroll;
@@ -384,13 +396,13 @@ main section:nth-child(4) {
 
     article:nth-child(8) {
         text-align: right;
-        color: var(--background-color);
+        color: var(--white-text);
         font-size: 0.85em;
         padding-bottom: 2em;
     }
 
     article:nth-child(9){
-        color: var(--text-color);
+        color: var(--teller-background-color);
         background-color: var(--background-color-carousel);
 
         > article{
@@ -434,6 +446,7 @@ main section:nth-child(4) {
                 font-size: 0.8em;
                 padding: 0.3em 0.8em;
                 align-self: center;
+                color: var(--teller-background-color);
             }
 
             ul{
@@ -454,7 +467,6 @@ main section:nth-child(4) {
                 grid-column-start: 1;
                 grid-row-start: 4;
                 text-decoration: none;
-                color: var(--text-color);
             }
 
             a:nth-of-type(2):visited{
@@ -470,7 +482,6 @@ main section:nth-child(4) {
                 margin: 1em 0;
                 padding: 0 1em 0 0;
                 font-family: CeraProMedium;
-                text-align:left;
             }
 
             p:nth-of-type(2){
@@ -527,7 +538,7 @@ main section:nth-child(4) {
         text-align: right;
         a{
             background-color: var(--button-background-color);
-            color: var(--text-color);
+            color: var(--teller-background-color);
             justify-content: center;
             text-decoration: none;
             display: inline-flex;
@@ -548,6 +559,7 @@ main section:nth-child(4) {
             font-family: CeraProMedium;
             margin: 0;
             padding: 0 0.5em 0 0.5em;
+            color: var(--text-color-black);
         }
 
         svg {
@@ -586,11 +598,12 @@ main details summary {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--button-background-color);
+  background-color: var(--summary-background-color);
   border-top: 1px solid var(--border-color);
   padding: 1rem 1.2rem;
   cursor: pointer;
   min-width: 0;
+  color: var(--text-color);
 
 svg {
     height: 1.5em;
@@ -618,6 +631,7 @@ main section:nth-child(7) {
   font-size: 1em;
   p {
     font-family: CeraProRegular;
+    color: var(--text-color);
   }
   ul {
     display: flex;
