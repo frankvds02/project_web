@@ -29,7 +29,7 @@
   }
   
   :root {
-    color-scheme: light-dark;
+    color-scheme: light dark;
       
     --link-color: #006db7, #0399ff;
     --nav-text-color: #747474, #d1d1d1;
