@@ -402,7 +402,7 @@ main section:nth-child(4) {
     }
 
     article:nth-child(9){
-        color: var(--teller-background-color);
+        color: var(--text-color-black);
         background-color: var(--background-color-carousel);
 
         > article{
