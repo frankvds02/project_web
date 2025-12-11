@@ -30,7 +30,6 @@
   
   :root {
     --link-color: #006db7;
-    --darkmode-link-color: #0399ff;
     --nav-text-color: #747474;
     --button-background-color: #f8f8f8;
     --border-color: #e0e0e0;
@@ -46,22 +45,41 @@
     --form-button-color-hover: #c9692b;
     --button-hover-background-color: #f6f6f6;
     --beschikbaarheid-text-color: #007133;
-    --button-gallery-color: #0009;
+    --button-gallery-color: #00000099;
     --star-color: #fbab18;
     --button-background-color-nav:#f2f2f2;
     --red-color:#dd1a22;
     --background-color-carousel: #e0c570;
-    --darkmode-accent: #1f1f1f;
+    --teller-background-color: white;
+    --white-text: white;
+    --summary-background-color: #f8f8f8;
+    --text-color-black: black;
+    --header-background-color: #f6f6f6;
+    --header2-background-color: white;
   }
 
-/* https://www.w3schools.com/css/css3_animations.asp */
+
+  @media (prefers-color-scheme: dark) {
+    :root{
+      --text-color:white;
+      --background-color: black;
+      --link-color: #0399ff;
+      --teller-background-color: #1f1f1f;
+      --button-gallery-color: rgb(194, 194, 194);
+      --summary-background-color: #1f1f1f;
+      --nav-text-color: #d1d1d1;
+      --header-background-color: #1f1f1f;
+      --header2-background-color: #1f1f1f;
+    }
+}
+
+  
   @keyframes heartAnimation {
       25%  {transform: rotate(45deg);}
       75%  {transform: rotate(-45deg);}
       100% {transform: rotate(0deg);}
   }
-
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion */
+  
   @media (prefers-reduced-motion: reduce) {
       html {
           transition: none !important;
@@ -70,156 +88,6 @@
           scroll-snap-type: none !important;
       }
   }
-
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-color-scheme */
-  @media (prefers-color-scheme: dark) {
-  
-    nav article{
-        background-color: var(--text-color);
-
-        a:nth-of-type(2), a:nth-of-type(3), a:nth-of-type(4) {
-            color: var(--background-color);
-        }
-        a:nth-of-type(6), a:nth-of-type(7), a:nth-of-type(8), a:nth-of-type(9) {
-            color: var(--background-color);
-        }
-
-        button{
-            background-color: var(--darkmode-accent);
-        }
-
-        button:hover, button:focus{
-            background-color: var(--nav-text-color);
-        }
-    }
-
-    svg{
-        fill: var(--background-color);
-    }
-
-    nav ul li:nth-of-type(2) svg{
-        fill: var(--text-color);
-    }
-
-    header {
-        background: var(--text-color);
-    }
-
-    main{
-        background-color: var(--text-color);
-        color: var(--background-color);
-
-        > nav {
-            p{
-              color: var(--background-color);
-            }
-            a{
-                color: var(--darkmode-link-color);
-            }
-        }
-
-        details{
-            summary{
-                background-color: var(--darkmode-accent);
-                svg{
-                    fill: var(--background-color);
-                }
-            }
-        }
-
-        section:nth-child(2){
-            > article > p{
-                background: var(--darkmode-accent);
-            }
-
-            > article > a{
-                background: var(--darkmode-accent);
-            }
-        }
-
-        section:nth-child(3){
-            article:nth-child(1){
-                > p:nth-of-type(1), p:nth-of-type(2){
-                    color: var(--text-color);
-                }
-
-                a > p{
-                    color: var(--darkmode-link-color);
-                }
-
-                p:nth-of-type(4) {
-                    color: var(--accent-color);
-                }
-
-                article{
-                    button{
-                        background-color: var(--darkmode-accent);
-                    }
-
-                    input{
-                        color: var(--background-color);
-                        background-color: var(--darkmode-accent);
-                    }
-
-                    input:hover, input:focus{
-                        border: 2px solid var(--accent-color);
-                    }
-            
-                    button:hover, button:focus{
-                        border: 2px solid var(--accent-color);
-                    }
-                }
-            }
-
-            article:nth-child(2){
-                button:nth-of-type(1){
-                    svg{
-                        fill: var(--text-color);
-                    }
-                }
-
-                button:nth-of-type(2){
-                    background-color: var(--darkmode-accent);
-                }
-
-                button:nth-of-type(2):hover, button:nth-of-type(2):focus{
-                    background-color: var(--nav-text-color);
-                }
-            }
-
-            article:nth-child(4){
-                a{
-                    color: var(--darkmode-link-color);
-                }
-            }
-
-            article:nth-child(5){
-                button{
-                    background-color: var(--text-color);
-                    color: var(--background-color);
-                }
-
-                button:hover, button:focus{
-                    p{
-                    color: var(--darkmode-link-color);
-                    }
-                }
-            }
-
-            article:nth-child(6){
-                a{
-                    color: var(--background-color);
-                }
-            }
-        }  
-
-        section:nth-child(7){
-            a{
-                color: var(--background-color);
-            }
-        }
-    }
-}
 
 body > a{
   background-color: var(--border-color);
@@ -230,7 +98,6 @@ body > a{
 
 body > a:focus{
   right: 0px;
-    color: var(--text-color);
 }
   
   nav article{
@@ -336,12 +203,24 @@ body > a:focus{
     > nav > a img, > nav > ul > li > a svg{
       height: 2em;
     }
+
+    > nav > a img, > nav > ul > li:nth-of-type(2) > a > svg{
+      color: var(--text-color-black);
+    }
   
     > nav > button svg{
       height: 1.5em;
       padding: 0 0.5em 0 0;
+      color: var(--text-color);
     }
   
+  }
+
+  main{
+    background-color: var(--background-color);
+    h1{
+      color: var(--text-color);
+    }
   }
   
   main > nav {
@@ -366,6 +245,7 @@ body > a:focus{
   
     svg{
       height: 1em;
+      color: var(--nav-text-color);
     }
   }
   
@@ -475,7 +355,7 @@ body > a:focus{
   footer {
     background-color: var(--footer-background-color);
     p {
-      color: var(--background-color);
+      color: var(--white-text);
     }
     section:nth-child(1) {
       display: flex;
@@ -487,7 +367,7 @@ body > a:focus{
           margin: 0;
       }
       svg {
-          fill: var(--background-color);
+          fill: var(--white-text);
           height: 2em;
         }
     }
@@ -524,7 +404,7 @@ body > a:focus{
           text-align: left;
           font-size: 0.9em;
           font-family: CeraProMedium;
-          color: var(--background-color);
+          color: var(--text-color);
         }
         input[type="email"] {
           padding: 1.5em 1.5em;
@@ -546,7 +426,7 @@ body > a:focus{
         svg {
           width: 1em;
           height: auto;
-          fill: var(--text-color);
+          fill: var(--teller-background-color);
         }
     }
     section:nth-child(6) {
@@ -576,13 +456,14 @@ body > a:focus{
           flex-direction: row;
           justify-content: space-between;
           border: none;
-          border-top: 1px solid var(--background-color);
+          border-top: 1px solid var(--white-text);
           cursor: pointer;
           background-color: var(--footer-background-color);
-          color: var(--background-color);
+          color: var(--white);
           padding: 1em;
           font-family: CeraProBold;
           font-size: 1.2em;
+          color: var(--white-text);
         }
         article summary:hover, article summary:focus {
           background-color: var(--footer-button-background);
@@ -593,7 +474,7 @@ body > a:focus{
           gap: 0;
         }
         article details li {
-          border-top: 1px solid var(--background-color);
+          border-top: 1px solid var(--white-text);
           padding: 1em;
         }
         details svg {
@@ -616,11 +497,11 @@ body > a:focus{
       padding: 1em;
       font-size: 1em;
       font-family: CeraProRegular;
-      color: var(--background-color);
+      color: var(--white-text);
     }
     li a {
       font-family: CeraProRegular;
-      color: var(--background-color);
+      color: var(--white-text);
       text-decoration: none;
     }
     a:hover, a:focus {
@@ -629,5 +510,5 @@ body > a:focus{
   }
 label{
     position: absolute;
-    right: 9999px;
+    left: 9999999px;
 }
